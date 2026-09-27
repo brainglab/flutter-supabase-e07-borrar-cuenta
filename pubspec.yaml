@@ -1,0 +1,48 @@
+name: app_tareas
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_sign_in: ^7.2.0
+  supabase_flutter: ^2.17.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Recorre la app real en el emulador o el simulador (capturas del video)
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Sistema de diseño Brainglab UI (lib/diseno/): tipografía y marca
+  assets:
+    - assets/marca/isotipo.png
+    - assets/google/g.png # logo oficial, solo para BotonGoogle
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fuentes/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fuentes/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fuentes/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fuentes/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fuentes/Montserrat-ExtraBold.ttf
+          weight: 800
+    # Solo para BotonGoogle: la fuente que piden las pautas de Google
+    - family: GoogleSans
+      fonts:
+        - asset: assets/google/GoogleSans-Medium.ttf
+          weight: 500

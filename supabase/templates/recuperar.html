@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<body style="margin:0;background:#040711">
+<!-- Correo para recuperar la contraseña (resetPasswordForEmail).
+     {{ .Token }} es el código de 6 dígitos que la app verifica con verifyOTP (tipo recovery). -->
+<div style="margin:0;padding:32px 16px;background:#040711;font-family:Montserrat,Arial,sans-serif;color:#F0F2F4">
+  <div style="max-width:420px;margin:0 auto;padding:32px 28px;background:#0A0F1C;border:1px solid #141A29;border-radius:16px">
+    <p style="margin:0 0 8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#FA3E39">Mis tareas</p>
+    <h1 style="margin:0 0 12px;font-size:22px;font-weight:800">Tu código para recuperar la contraseña</h1>
+    <p style="margin:0 0 24px;font-size:15px;line-height:1.5;color:#C7CEDF">Escríbelo en la app para elegir una contraseña nueva para <b style="color:#F0F2F4">{{ .Email }}</b>.</p>
+    <p style="margin:0 0 24px;padding:16px;font-size:34px;font-weight:800;letter-spacing:.3em;text-align:center;background:#040711;border:1px solid #141A29;border-radius:12px;color:#FA3E39">{{ .Token }}</p>
+    <p style="margin:0;font-size:13px;line-height:1.5;color:#C7CEDF">Si no pediste este código, ignora este correo: tu contraseña no cambia.</p>
+  </div>
+</div>
+</body>
+</html>

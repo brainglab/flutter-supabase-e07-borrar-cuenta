@@ -1,0 +1,12 @@
+include: package:flutter_lints/flutter.yaml
+
+# Ancho de 64 columnas: el código se lee entero en las láminas del video.
+formatter:
+  page_width: 64
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
